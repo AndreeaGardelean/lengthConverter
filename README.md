@@ -5,7 +5,7 @@ This is a personal project. It has been completed using JavaScript, HTML, CSS an
 
 
 ```bash
-   execute FLASK_APP=height.py
+   execute FLASK_APP=converter.py
 ```
 
 ```bash
