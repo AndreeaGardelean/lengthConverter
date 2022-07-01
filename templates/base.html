@@ -118,7 +118,10 @@
                     if (from === items[i].from) {
                         for(let k in items[i]) {
                             if(String(to) === String(k)) {
-                                finalval = value*items[i][k];
+                                finalval = (value*items[i][k]);
+                                if(finalval > 3000) {
+                                    finalval = finalval.toExponential(4);
+                                }
                             }
                         }
                     }
