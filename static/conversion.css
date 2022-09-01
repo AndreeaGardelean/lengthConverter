@@ -1,13 +1,32 @@
+* {
+    margin: auto;
+    max-width:300px;
+}
 div {
-    position: relative;
+    position: fixed;
     height: 100%;
-    width: auto;
+    width: 100%;
     overflow: hidden;
-    display: inline-block;
+    padding: 0;
+}
+
+label, input, select {
+    position: relative;
     font-size: 30px;
-    padding: 100px;
+    padding: 10px;
     top: 20vh;
-    left: 52vh;
+    display: block;
+}
+
+div.to {
+    position: fixed;
+    right: 30vh;
+}
+
+div.from {
+    position: fixed;
+    left: 30vh;
+    top: 6vh;
 }
 
 select {
@@ -22,36 +41,26 @@ select, input {
     display: block;
     border: 1px solid #000000;
     padding: 20px;
-    font-size: 30px;
-    border-radius: 10px;
-}
-
-div.info {
-    top: -25vh;
-    left: 65vh;
-}
-
-a.btn1 {
-    position: relative;
-    left: 90px;
-    top: -50px;
-    text-decoration: none;
-    color: black;
-}
-
-a.btn2 {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-    left: 200vh;
-    top: -20vh;
+    font-size: 25px;
+    border-radius: 5px;
+    font-style: italic;
 }
 
 h1 {
-    position: relative;
+    position: fixed;
     text-align: center;
-    top: -35vh;
+    top: 10vh;
+    font-size: 40px;
+}
+
+.btn {
+    position: relative;
+    right: 66vh;
+    background-color: white;
+    border: none;
+    padding: 12px 12px;
+    font-size: 45px;
+    cursor: pointer;
 }
 
 p {
