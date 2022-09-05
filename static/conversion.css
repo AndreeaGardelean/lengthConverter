@@ -1,12 +1,13 @@
-* {
+/* * {
     margin: auto;
     max-width:300px;
-}
+} */
 div {
     position: fixed;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    margin: auto;
+    /* overflow: hidden; */
     padding: 0;
 }
 
@@ -15,18 +16,22 @@ label, input, select {
     font-size: 30px;
     padding: 10px;
     top: 20vh;
+    left: 39vw;
     display: block;
-}
-
-div.to {
-    position: fixed;
-    right: 30vh;
+    /* margin: auto; */
 }
 
 div.from {
     position: fixed;
-    left: 30vh;
+    right: 40vh;
     top: 6vh;
+
+}
+
+div.to {
+    position: fixed;
+    left: 40vh;
+
 }
 
 select {
@@ -50,12 +55,13 @@ h1 {
     position: fixed;
     text-align: center;
     top: 10vh;
-    font-size: 40px;
+    left: 38vw;
+    font-size: 3em;
 }
 
 .btn {
     position: relative;
-    right: 66vh;
+    right: 0vh;
     background-color: white;
     border: none;
     padding: 12px 12px;
@@ -64,8 +70,9 @@ h1 {
 }
 
 p {
-    position: relative;
+    position: fixed;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     top: 30vh;
+    right: 21vw;
 }
