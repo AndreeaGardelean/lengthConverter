@@ -1,54 +1,42 @@
-/* * {
-    margin: auto;
-    max-width:300px;
-} */
-div {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    /* overflow: hidden; */
+* {
+    margin: 0;
     padding: 0;
 }
 
-label, input, select {
-    position: relative;
-    font-size: 30px;
-    padding: 10px;
-    top: 20vh;
-    left: 39vw;
-    display: block;
-    /* margin: auto; */
+html { 
+    min-height: 100vh;
+    width: 100%;
 }
 
-div.from {
-    position: fixed;
-    right: 40vh;
-    top: 6vh;
-
+ label, input, select {
+    font-size: 2em;
 }
 
-div.to {
-    position: fixed;
-    left: 40vh;
-
+div.main-content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    height: max-content;
+    padding: 40px;
 }
 
-select {
-    width: 291px;
+ div.from, div.to {
+    display: inline-block;
+    width: max-content;
+    padding: 40px;
 }
 
-input {
-    width: 250px;
-}
-
-select, input {
-    display: block;
+ select, input {
+    width: 20vw;
+    box-sizing: border-box;
     border: 1px solid #000000;
     padding: 20px;
-    font-size: 25px;
+    font-size: 35px;
     border-radius: 5px;
     font-style: italic;
+    display: flex;
 }
 
 h1 {
@@ -57,11 +45,11 @@ h1 {
     top: 10vh;
     left: 38vw;
     font-size: 3em;
-}
+} 
 
-.btn {
+ .btn {
     position: relative;
-    right: 0vh;
+    left: 95%;
     background-color: white;
     border: none;
     padding: 12px 12px;
@@ -72,7 +60,9 @@ h1 {
 p {
     position: fixed;
     text-align: center;
+    width: 100%;
     font-size: 35px;
-    top: 30vh;
-    right: 21vw;
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 

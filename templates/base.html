@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/static/conversion.css?{{ range(1, 9999) | random }}" 
         media="screen, projector, print" rel="stylesheet" type="text/css"/>
     </head>
@@ -129,13 +130,20 @@
                 document.getElementById("toval").value = finalval;
             }
         </script>
-        <section id="/">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
-        <div class="all">
+        <div class="title">
+            <h1>Length converter</h1>
+        </div>
+
+        <div class="main-content">
             <div class="from">
-                <label for="inputval" class="labelval">From:<br></label>
-                <input type="number" id="inputval" name="inputval" oninput="conversion()">
+
+                <label>
+                    From:
+                    <input type="number" id="inputval" name="inputval" oninput="conversion()">
+                </label>
+
                 <select id="inputvaloption" class="select" name="inputoption" onchange="conversion()" required>
                     <option value="kilometre">Kilometre</option>
                     <option value="meter">Meter</option>
@@ -146,10 +154,13 @@
                     <option value="foot">Foot</option>
                     <option value="inch">Inch</option>
                 </select>
+
             </div>
+
             <div class="to">
-                <label class="labelval" for="toval"><br>To:<br></label>
+                <label for="toval" class="labelval">To:<br></label>
                 <input type="number" id="toval" name="toval" value="{{ val }}" disabled>           
+               
                 <select id="tovaloption" class="select" name="tooption" onchange="conversion()" required>
                     <option value="kilometre">Kilometre</option>
                     <option value="meter">Meter</option>
@@ -161,10 +172,8 @@
                     <option value="inch">Inch</option>
                 </select>
             </div>
-
-            <h1>Height converter</h1>
         </div>
-        </section>
+
         <a href="about" class="btn1" value="About">
             <button class="btn"><i class="fa fa-info-circle"></i></button>
         </a>
